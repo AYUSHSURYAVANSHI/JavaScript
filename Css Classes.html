@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .color{
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hello World</h1>
+        <button id="btn" name="form1">Send</button>
+        <div id="box" class="color dim">
+            <p>This is a dummy text </p>
+        </div>
+        <script>
+            let box = document.getElementById("box");
+            let result = console.log(box.className)
+            console.log(result)
+            box.className += "dim"
+            consol.log(box.classList)
+
+            for(let css of box.classList){
+                console.log(css);
+            }
+
+
+            
+
+        </script>
+    </body>
+</html>
