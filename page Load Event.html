@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <button id="btn"onclick="">Send</button>
+        <script>
+            function btnClick(){
+                alert("Button was clicked")
+            
+            }
+
+            let btn = document.getElementById("btn");
+            btn.addEventListener('click',btnClick)
+
+            btn.addEventListener('click',function(){
+                alert("btn was clicked");
+            });
+            
+            btn.addEventListener('mouseover', function(){
+                console.log("mouse over is activated");
+            })
+
+            window.addEventListener('DOMContentLoaded', function(){
+                
+            });
+            console.log("Fully Loaded");
+            
+
+        </script>
+    </body>
+</html>
