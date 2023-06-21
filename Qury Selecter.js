@@ -1,0 +1,1 @@
+// Qury selecter is work in any tag 
